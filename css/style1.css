@@ -180,7 +180,7 @@ background: #121635;
 top: 83px;
 left: -100%;
 text-align: center;
-transtition: all 0.5s;
+/* transtition: all 0.5s; */
 }
 nav ul li{
  display: block;
