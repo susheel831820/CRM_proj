@@ -43,6 +43,19 @@
 </ul>
 </nav>
 </div>
+<div class="container">
+ <div class="card">
+          <div class="card-header">
+            <form action="view_query.php" method="post">
+             <h2>Request 1</21>
+          </div>
+          <div class="card-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. porro!</p>
+            <button  type="submit"class="btn btn-primary" style="right:0;">View</button>
+          </div>
+          </form>   
+ </div>
+</div>
             <footer>
                      <h4><i>&copy;Copyright Reserved.</i></h4>
                    
