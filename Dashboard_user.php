@@ -16,11 +16,11 @@ function populate(s1,s2){
 	var s2 = document.getElementById(s2);
 	s2.innerHTML = "";
 	if(s1.value == "samsung"){
-		var optionArray = ["|","m11|m11","a51|a51","a31|a31"];
+		var optionArray = ["Model|Model","m11|m11","a51|a51","a31|a31"];
 	} else if(s1.value == "realmi"){
-		var optionArray = ["|","realmi 2 pro|realmi 2 pro","realme GT Neo 3|realme GT Neo 3","realmi 9|realmi 9"];
+		var optionArray = ["Model|Model","realmi 2 pro|realmi 2 pro","realme GT Neo 3|realme GT Neo 3","realmi 9|realmi 9"];
 	} else if(s1.value == "oppo"){
-		var optionArray = ["|","A54|A54","A31|A31"];
+		var optionArray = ["Model|Model","A54|A54","A31|A31"];
 	}
 	for(var option in optionArray){
 		var pair = optionArray[option].split("|");
@@ -120,21 +120,63 @@ function populate(s1,s2){
                    <input id="submit" type="submit" class="form-control btn btn-primary" name="submit" placeholder=" Submit" ><span class="formerror"></span>
                    <button class ="btn btn-default" id="clear-btn">clear</button>
            </div>-->
-           <form action="/action_page.php"  class="form"style="">
+           <form action=""  class="form"  method ="post" style="">
+            <h1> Request form: </h1>
+            <div class="form-group">
+    <label for="name ">Name:</label>
+    <input type="name" class="form-control" placeholder="Name" id="fname">
+  </div>
   <div class="form-group">
     <label for="email">Email address:</label>
     <input type="email" class="form-control" placeholder="Enter email" id="email">
   </div>
+
   <div class="form-group">
-    <label for="pwd">Password:</label>
-    <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+    <label for="phone">Phone:</label>
+    <input type="phone" class="form-control" placeholder="Phone" id="phone">
   </div>
-  <div class="form-group form-check">
-    <label class="form-check-label">
-      <input class="form-check-input" type="checkbox"> Remember me
-    </label>
+
+  <div class="form-group">
+    <label for="altphone">Alternative Phone:</label>
+    <input type="altphone" class="form-control" placeholder="Alternative Phone" id="altphone">
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+
+  <div class="form-group">
+    <label for="billno">Bill Number:</label>
+    <input type="billno" class="form-control" placeholder="Bill Number" id="billno">
+  </div>
+ 
+    <div class="form-group">
+      <label for="brand">Brand Name</label>
+      <select id="slct1" name="slct1" class="form-control"  onchange="populate(this.id,'slct2')">
+        <option value=" " >Brand</option>
+            <option value="samsung">samsung</option>
+            <option value="oppo">oppo</option>
+            <option value="realmi">realmi</option>
+            <option value="lava">lava</option>
+            </select>
+      
+
+            </div>
+            <div class="form-group">
+            <label for="brand">Model Name</label>
+            <select id="slct2" class="form-control" style="margin-top:0px;">
+            <option value=" " >model</option>
+          </select><br>
+          </div>
+         
+          <div class="form-outline mb-4"><label>Address</label>
+            <textarea class="form-control" id="form7Example7" rows="4"></textarea>
+           
+          </div>
+  <div class="form-outline mb-4">
+  <label class="form-label" for="form7Example7">Description</label>
+            <textarea class="form-control" id="form7Example7" rows="4"></textarea>
+           
+          </div>
+          
+  <button type="submit" class="btn btn-primary submit-btn" >Submit</button>
+  <button type="clear" class="btn btn-default submit-btn">clear</button>
 </form>
 </div>
             <footer> 
