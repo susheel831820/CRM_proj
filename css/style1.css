@@ -27,7 +27,7 @@ left:45%;
 font-size: 10px;
 }
 .main-bar{
-  background-color: #b5d9d1;
+  background-color: #262f73;
         /* display: flow-root; */
         padding: 0 10%;
         height: 83px;
@@ -65,7 +65,7 @@ right:-50px;
 width: 80%;
 transform: skew(30deg);
 /* background-color: #ffe10a; */
-background-color: #262f73;
+background-color: #b5d9d1;
 /* background-color: #2e151b; */
 
 
@@ -79,7 +79,7 @@ z-index:-1;
 right:10%;
 width: 2000px;
 /* background-color: #ffe10a; */
-background-color: #262f73;
+background-color: #b5d9d1;
 /* background-color: #2e151b; */
 }
 .logo-header a{
@@ -113,7 +113,7 @@ nav li a{
 }
 nav li:hover a{
 /* color:; */
-background-color: #fddb0d;
+background-color: #b5d9d1;
 border-radius: 14px;
 }
 @media(max-width: 1250px){
