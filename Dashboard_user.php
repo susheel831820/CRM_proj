@@ -61,26 +61,26 @@ function populate(s1,s2){
 <div class="container">
         <h3>Request For Service</h3>  <br>
         <form class="form">
-        <div class="input-group" id="name" style="dispaly:inline-block">
+        <div class="input-group" id="name" style="display:inline-block;">
     <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> -->
      Full Name<input id="fname" type="text" class="form-control" name="fname" placeholder="Full Name" ><span class="formerror"></span>
         </div>
-        <div class="input-group" id="email" style="dispaly:inline-block">
+        <div class="input-group" id="email" style="display:inline-block;">
     <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> -->
     Email <input id="email" type="text" class="form-control" name="email" placeholder="EMAIL" ><span class="formerror"></span>
         </div>
 
-        <div class="input-group" id="phone" style="dispaly:inline-block">
+        <div class="input-group" id="phone" style="display:inline-block;">
     <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> -->
      Phone<input id="phone" type="phone" class="form-control" name="phone" placeholder="Enter Your Phone No." ><span class="formerror"></span>
         </div>
 
-        <div class="input-group" id="altname" style="dispaly:inline-block">
+        <div class="input-group" id="altname" style="display:inline-block;">
                    <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> -->
                  Alternative Phone <input id="alt phone" type="alt phone" class="form-control" name="Alternative phone" placeholder="Alt Phone No." ><span class="formerror"></span>
         </div>
 
-        <div class="input-group" id="billno" style="dispaly:inline-block">
+        <div class="input-group" id="billno" style="display:inline-block;">
                    <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> -->
                  Bill No. <input id="billNo" type="billNo" class="form-control" name="billNo" placeholder="Bill No." ><span class="formerror"></span>
         </div>
@@ -97,19 +97,19 @@ function populate(s1,s2){
             <select id="slct2"></select><br>
         </div>
         
-            <div class="input-group" id="textarea" style="dispaly:inline-block">
+            <div class="input-group" id="textarea" style="display:inline-block">
                    <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> -->
                    Description:<input id="textarea" type="textarea" class="form-control" name="textarea" placeholder=" text area" ><span class="formerror"></span>
            </div>
           
 
-           <div class="input-group" id="address" style="dispaly:inline-block">
+           <div class="input-group" id="address" style="display:inline-block">
                    <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> -->
                  Address <input id="address" type="address" class="form-control" name="address" placeholder="Address" ><span class="formerror"></span>
         </div>
 
 
-        <div class="input-group" id="submit" style="dispaly:inline-block">
+        <div class="input-group" id="submit" style="display:inline-block">
                    <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> -->
                    <input id="submit" type="submit" class="form-control btn btn-primary" name="submit" placeholder=" Submit" ><span class="formerror"></span>
                    <button class ="btn btn-default" id="clear-btn">clear</button>
