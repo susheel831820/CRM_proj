@@ -59,13 +59,13 @@ function populate(s1,s2){
 </nav>
 </div>
 <div class="container">
-<<<<<<< HEAD
+
   <!-- <div>
         <h3>REQUEST For Service</h3> 
         </div>
-=======
+
         <h3>Request For Service</h3>  <br>
->>>>>>> fa10bcb9f8ad28ae16ae516054525764bddeff9f
+
         <form class="form">
         <div class="input-group" id="name" style="">
    
