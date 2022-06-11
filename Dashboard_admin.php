@@ -51,13 +51,14 @@
           </div>
           <div class="card-body">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. porro!</p>
-            <button  type="submit"class="btn btn-primary" style="right:0;">View</button>
+            <button  type="submit"class="btn btn-primary" style="right:0;margin-top: 0px;height: 36px;margin-left: 229px;">View</button>
           </div>
           </form>   
  </div>
 </div>
             <footer>
                      <h4><i>&copy;Copyright Reserved.</i></h4>
+            </footer>
                    
 </body>
 </html>

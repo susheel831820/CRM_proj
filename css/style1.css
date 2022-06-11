@@ -15,6 +15,7 @@ h4{
 footer{
   position: absolute;
   /* background-color: rgb(5, 95, 179); */
+  /* position: sticky; */
   background-color: #262f73;
   width:100%;
   color:white;
@@ -208,4 +209,31 @@ nav ul{
 .container{
   margin-left: 250px;
   display: flex;
+}
+.card{
+  padding: 14px;
+  display: flex;
+  flex-wrap: nowrap;
+  border-color: 2px solid black;
+  background: #d4e7e3;
+  margin-top: 54px;
+  width: 900px;
+  height: 89px;
+  border: 1px solid #244c44;
+  border-radius: 0px;
+}
+.card-body{
+  display: flex;
+  padding: 12px;
+}
+.card-body button{
+  margin-top:10px;
+}
+.card-body p{
+  margin: 12px;
+}
+.form{
+  width: 485px;
+  margin-left: 190px;
+  margin-top: 20px;
 }
