@@ -207,4 +207,5 @@ nav ul{
 }
 .container{
   margin-left: 250px;
+  display: flex;
 }

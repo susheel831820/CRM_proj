@@ -59,29 +59,31 @@ function populate(s1,s2){
 </nav>
 </div>
 <div class="container">
-        <h3>REQUEST For Service</h3>  <br>
+  <!-- <div>
+        <h3>REQUEST For Service</h3> 
+        </div>
         <form class="form">
-        <div class="input-group" id="name" style="display:inline-block;">
-    <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> -->
+        <div class="input-group" id="name" style="">
+   
      Full Name<input id="fname" type="text" class="form-control" name="fname" placeholder="Full Name" ><span class="formerror"></span>
         </div>
-        <div class="input-group" id="email" style="display:inline-block;">
-    <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> -->
+        <div class="input-group" id="email" style="">
+  
     Email <input id="email" type="text" class="form-control" name="email" placeholder="EMAIL" ><span class="formerror"></span>
         </div>
 
-        <div class="input-group" id="phone" style="display:inline-block;">
-    <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> -->
+        <div class="input-group" id="phone" style="">
+    
      Phone<input id="phone" type="phone" class="form-control" name="phone" placeholder="Enter Your Phone No." ><span class="formerror"></span>
         </div>
 
-        <div class="input-group" id="altname" style="display:inline-block;">
-                   <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> -->
+        <div class="input-group" id="altname" style="">
+                  
                  Alternative Phone <input id="alt phone" type="alt phone" class="form-control" name="Alternative phone" placeholder="Alt Phone No." ><span class="formerror"></span>
         </div>
 
-        <div class="input-group" id="billno" style="display:inline-block;">
-                   <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> -->
+        <div class="input-group" id="billno" style="">
+                  
                  Bill No. <input id="billNo" type="billNo" class="form-control" name="billNo" placeholder="Bill No." ><span class="formerror"></span>
         </div>
 
@@ -97,25 +99,25 @@ function populate(s1,s2){
             <select id="slct2"></select><br>
         </div>
         
-            <div class="input-group" id="textarea" style="display:inline-block">
-                   <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> -->
+            <div class="input-group" id="textarea" style="">
+            
                    Description:<input id="textarea" type="textarea" class="form-control" name="textarea" placeholder=" text area" ><span class="formerror"></span>
            </div>
           
 
-           <div class="input-group" id="address" style="display:inline-block">
-                   <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> -->
+           <div class="input-group" id="address" style="">
+                 
                  Address <input id="address" type="address" class="form-control" name="address" placeholder="Address" ><span class="formerror"></span>
         </div>
 
 
-        <div class="input-group" id="submit" style="display:inline-block">
-                   <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> -->
+        <div class="input-group" id="submit" style="">
+                  
                    <input id="submit" type="submit" class="form-control btn btn-primary" name="submit" placeholder=" Submit" ><span class="formerror"></span>
                    <button class ="btn btn-default" id="clear-btn">clear</button>
-           </div>
+           </div>-->
 </div>
-            <footer>
+            <footer> 
                      <h4><i>&copy;Copyright Reserved.</i></h4>
                     </footer>
                    
