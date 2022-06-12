@@ -25,7 +25,8 @@
 
       }
    }
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>College_crmProgject.com</title>

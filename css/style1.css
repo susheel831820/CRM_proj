@@ -8,18 +8,20 @@ body{
    /* background-color: #2f4454; */
    font-family: "Poppins",sans-serif;
    /* background-image: radial-gradient(#b7b7ef, white) */
+   width: 100%;
 }
 h4{
   font-size: 22px;
 }
 footer{
-  position:relative;
+  position:fixed;
   /* background-color: rgb(5, 95, 179); */
   background-color: #262f73;
   width:100%;
   color:white;
   height:8vh;
   bottom: 0;
+  /* margin-top: 30px; */
 }
 footer h4{
 position: absolute;
@@ -176,6 +178,7 @@ nav ul{
 position: absolute;
 width: 205px;
 height: 100vh;
+min-height: 427px;
 background: #121635;
 top: 83px;
 left: -100%;
@@ -207,12 +210,14 @@ nav ul{
 }
 .container{
   margin-left: 250px;
-  margin-bottom: 30px;
-  
+  margin-bottom: 101px;
+  max-width: 636px;
+  min-width: 499px;
+  min-height: 536px;
 }
 .form{
-  width: 674px;
-  margin-left: 253px;
+  width: 612px;
+  margin-left: 30px
 }
 .submit-btn{
   width: 169px;

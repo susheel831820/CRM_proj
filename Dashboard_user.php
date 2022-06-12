@@ -10,6 +10,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="css/style1.css">
 </head>
+
 <script>
 function populate(s1,s2){
 	var s1 = document.getElementById(s1);
@@ -50,7 +51,7 @@ function populate(s1,s2){
                <div id="namebar">
                <h2><?php echo strtoupper($name);?></h2>
                </div>
-                <ul style="height: 933px;">
+                <ul style="height: 971px;">
                     <li class="active"><a href="#">User</a></li>
                     <li><a href="#">History</a></li>
                     <li><a href="#">Setting</a></li>
@@ -59,37 +60,37 @@ function populate(s1,s2){
 </nav>
 </div>
 <div class="container">
+ 
 
-
-           <form action=""  class="form"  method ="post" >
+           <form action="action_request.php"  class="form"  method ="post" >
             <h1> Request form: </h1>
             <div class="form-group">
     <label for="name ">Name:</label>
-    <input type="name" class="form-control" placeholder="Name" id="fname">
+    <input type="name" class="form-control" name="name" placeholder="Full Name" id="fname">
   </div>
   <div class="form-group">
     <label for="email">Email address:</label>
-    <input type="email" class="form-control" placeholder="Enter email" id="email">
+    <input type="email" class="form-control" name="meail" placeholder="Enter email" id="email">
   </div>
 
   <div class="form-group">
     <label for="phone">Phone:</label>
-    <input type="phone" class="form-control" placeholder="Phone" id="phone">
+    <input type="phone" class="form-control" name="phone"placeholder="Phone" id="phone">
   </div>
 
   <div class="form-group">
     <label for="altphone">Alternative Phone:</label>
-    <input type="altphone" class="form-control" placeholder="Alternative Phone" id="altphone">
+    <input type="altphone" class="form-control" name="alt-phone" placeholder="Alternative Phone" id="altphone">
   </div>
 
   <div class="form-group">
     <label for="billno">Bill Number:</label>
-    <input type="billno" class="form-control" placeholder="Bill Number" id="billno">
+    <input type="billno" class="form-control"  name="bill-No"placeholder="Bill Number" id="billno">
   </div>
  
     <div class="form-group">
       <label for="brand">Brand Name</label>
-      <select id="slct1" name="slct1" class="form-control"  onchange="populate(this.id,'slct2')">
+      <select id="slct1" name="slct1" class="form-control" name="brand" onchange="populate(this.id,'slct2')">
         <option value=" " >Brand</option>
             <option value="samsung">samsung</option>
             <option value="oppo">oppo</option>
@@ -100,19 +101,19 @@ function populate(s1,s2){
 
             </div>
             <div class="form-group">
-            <label for="brand">Model Name</label>
-            <select id="slct2" class="form-control" style="margin-top:0px;">
+            <label for="model-name">Model Name</label>
+            <select id="slct2" class="form-control" name="model" style="margin-top:0px;">
             <option value=" " >model</option>
           </select><br>
           </div>
          
           <div class="form-outline mb-4"><label>Address</label>
-            <textarea class="form-control" id="form7Example7" rows="4"></textarea>
+            <textarea class="form-control"  name="Address" id="form7Example7" rows="4"></textarea>
            
           </div>
   <div class="form-outline mb-4">
   <label class="form-label" for="form7Example7">Description</label>
-            <textarea class="form-control" id="form7Example7" rows="4"></textarea>
+            <textarea class="form-control" name ="discription" id="form7Example7" rows="4"></textarea>
            
           </div>
           
