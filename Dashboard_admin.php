@@ -59,13 +59,14 @@ function send_token(id){
   ?>
  <div class="card" style="display: flex; width: 870px; margin-top: 96px; margin-left: 120px;    height: 126px; padding: 20px;     border: 1px solid black;">
           <div class="card-header"  style="width: 321px;"   >
-            <form action="#" method="post">
+            <form action="view_query.php" method="post">
              <h2 name="token_no">Request <?php  echo $row['token_no'];?></h2>
           </div>
           <div class="card-body"  style="    display: flex;    flex-direction: row; margin-left: 67px;">
             <p style="    margin-top: 23px; width: 294px;"><?php echo "Name : ".$row['Name']; ?></p><br>
             <p><?php echo "Problem :".$row['Description']; ?></p>
-            <button  type="button" class="btn btn-primary" onclick="send_token('<?php echo $row['token_no']?>');" style="right: 0px; margin-top: 24px;  height: 36px; margin-left: 94px;margin-right: 69px;    width: 89px;">View</button>
+            
+            <button  type="submit" class="btn btn-primary" name ="id" value="<?php echo $row['token_no']?>"  style="right: 0px; margin-top: 24px;  height: 36px; margin-left: 94px;margin-right: 69px;    width: 89px;">View</button>
           </div>
           </form>   
  </div>
