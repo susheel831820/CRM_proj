@@ -116,14 +116,14 @@ nav li:hover a{
 background-color: #b5d9d1;
 border-radius: 14px;
 }
-@media(max-width: 1250px){
+/* @media(max-width: 1250px){
 .main-bar{
 padding:0 2%;
 }
 nav li a{
 padding: 15px 20px;
 }
-}
+} */
 .checkbtn{
  float: right;
  width:20px;
@@ -157,14 +157,14 @@ top: 7px;
 .checkbtn span:nth-child(3){
 top: 14px;
 }
-@media(max-width:992px){
+/* @media(max-width:992px){
   #nameShown h2{
 
     font-size: 25px;
     margin-top: 14px;
     margin-bottom: -21px;
 }
-  }
+  } */
 .main-bar{
    padding: o 10%;
 }
@@ -191,12 +191,12 @@ nav ul li{
  left: 0;
 }
 /* } */
-@media(max-width:560px){
+/* @media(max-width:560px){
 nav ul{
   display: block;
   width:100%;
 }
-}
+} */
 #namebar{
   position: relative;
   float: right;
@@ -208,6 +208,7 @@ nav ul{
 .container{
   margin-left: 250px;
   margin-bottom: 30px;
+  width:100vh;
   
 }
 .form{
