@@ -14,6 +14,11 @@
 <?php
    include('session.php');
 ?>
+<script>
+function send_token(id){
+          //  console.log(no); 
+   
+  </script>
 <body>
                  <div class="main-bar">
                  <nav>
@@ -44,21 +49,35 @@
 </nav>
 </div>
 <div class="container">
- <div class="card">
-          <div class="card-header">
-            <form action="view_query.php" method="post">
-             <h2>Request 1</21>
+  <?php
+    $query = "SELECT * FROM `Request_table`;";
+    $result = mysqli_query($db,$query);
+    $resultcheck = mysqli_num_rows($result);
+    if ($resultcheck > 0){
+
+    while($row = mysqli_fetch_assoc($result)){
+  ?>
+ <div class="card" style="display: flex; width: 870px; margin-top: 96px; margin-left: 120px;    height: 126px; padding: 20px;     border: 1px solid black;">
+          <div class="card-header"  style="width: 321px;"   >
+            <form action="#" method="post">
+             <h2 name="token_no">Request <?php  echo $row['token_no'];?></h2>
           </div>
-          <div class="card-body">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. porro!</p>
-            <button  type="submit"class="btn btn-primary" style="right:0;margin-top: 0px;height: 36px;margin-left: 229px;">View</button>
+          <div class="card-body"  style="    display: flex;    flex-direction: row; margin-left: 67px;">
+            <p style="    margin-top: 23px; width: 294px;"><?php echo "Name : ".$row['Name']; ?></p><br>
+            <p><?php echo "Problem :".$row['Description']; ?></p>
+            <button  type="button" class="btn btn-primary" onclick="send_token('<?php echo $row['token_no']?>');" style="right: 0px; margin-top: 24px;  height: 36px; margin-left: 94px;margin-right: 69px;    width: 89px;">View</button>
           </div>
           </form>   
  </div>
+    <?php
+    }
+    } 
+    ?>
 </div>
             <footer>
                      <h4><i>&copy;Copyright Reserved.</i></h4>
             </footer>
                    
 </body>
+
 </html>

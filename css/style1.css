@@ -230,3 +230,9 @@ nav ul{
     margin-top: 24px;
     margin-left: 30px;
 }
+.card{
+  display: flex;
+    width: 708px;
+    margin-top: 96px;
+    margin-left: 120px;
+}

@@ -22,7 +22,15 @@
  echo $description."\n";
  echo $sno;
 
-  $query ="INSERT INTO `request_table`(`Request_no`, `Name`, `Phone`, `Email`, `Bill_no`, `Brand`, `Model`, `Description`, `Photo`, `Status`, `Sno`) VALUES (NULL,'$full_name','$phone','$email','$bill_no','$brand','$model','$description','photoxyz.jpg','pending','$sno')";
-  
+  $query = "INSERT INTO `request_table`(`Name`, `Phone`,`Alt-phone_no`, `Email`, `Bill_no`, `Brand`, `Model`,`Address`, `Description`, `Photo`, `Status`, `Sno`,`token_no`) VALUES ('$full_name','$phone','$alt_phone','$email','$bill_no','$brand','$model','$address','$description','photoxyz.jpg','pending','$sno',NULL);";
+  $result = mysqli_query($db,$query);
+  if($result==1){
+   header("location:Dashboard_user.php");
+    echo "succesesfull data submit" ;
+  }
+  else{
+   echo "not insertted data";
+  //  header("location:success.php");
+  }
 
 ?>
