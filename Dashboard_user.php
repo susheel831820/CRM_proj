@@ -70,7 +70,7 @@ function populate(s1,s2){
   </div>
   <div class="form-group">
     <label for="email">Email address:</label>
-    <input type="email" class="form-control" name="meail" placeholder="Enter email" id="email">
+    <input type="email" class="form-control" name="email" placeholder="Enter email" id="email">
   </div>
 
   <div class="form-group">
@@ -85,12 +85,12 @@ function populate(s1,s2){
 
   <div class="form-group">
     <label for="billno">Bill Number:</label>
-    <input type="billno" class="form-control"  name="bill-No"placeholder="Bill Number" id="billno">
+    <input type="billno" class="form-control"  name="bill_No"placeholder="Bill Number" id="billno">
   </div>
  
     <div class="form-group">
       <label for="brand">Brand Name</label>
-      <select id="slct1" name="slct1" class="form-control" name="brand" onchange="populate(this.id,'slct2')">
+      <select id="slct1" name="slct1" class="form-control"  onchange="populate(this.id,'slct2')">
         <option value=" " >Brand</option>
             <option value="samsung">samsung</option>
             <option value="oppo">oppo</option>
@@ -102,7 +102,7 @@ function populate(s1,s2){
             </div>
             <div class="form-group">
             <label for="model-name">Model Name</label>
-            <select id="slct2" class="form-control" name="model" style="margin-top:0px;">
+            <select id="slct2" class="form-control" name="slct2" style="margin-top:0px;">
             <option value=" " >model</option>
           </select><br>
           </div>
