@@ -173,7 +173,7 @@ top: 14px;
  margin-right: 40px;
 }
 nav ul{
-position: fixed;
+position: absolute;
 width: 205px;
 height: 100vh;
 background: #121635;

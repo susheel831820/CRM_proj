@@ -50,7 +50,7 @@ function populate(s1,s2){
                <div id="namebar">
                <h2><?php echo strtoupper($name);?></h2>
                </div>
-                <ul>
+                <ul style="height: 933px;">
                     <li class="active"><a href="#">User</a></li>
                     <li><a href="#">History</a></li>
                     <li><a href="#">Setting</a></li>
@@ -60,67 +60,8 @@ function populate(s1,s2){
 </div>
 <div class="container">
 
-  <!-- <div>
-        <h3>REQUEST For Service</h3> 
-        </div>
 
-        <h3>Request For Service</h3>  <br>
-
-        <form class="form">
-        <div class="input-group" id="name" style="">
-   
-     Full Name<input id="fname" type="text" class="form-control" name="fname" placeholder="Full Name" ><span class="formerror"></span>
-        </div>
-        <div class="input-group" id="email" style="">
-  
-    Email <input id="email" type="text" class="form-control" name="email" placeholder="EMAIL" ><span class="formerror"></span>
-        </div>
-
-        <div class="input-group" id="phone" style="">
-    
-     Phone<input id="phone" type="phone" class="form-control" name="phone" placeholder="Enter Your Phone No." ><span class="formerror"></span>
-        </div>
-
-        <div class="input-group" id="altname" style="">
-                  
-                 Alternative Phone <input id="alt phone" type="alt phone" class="form-control" name="Alternative phone" placeholder="Alt Phone No." ><span class="formerror"></span>
-        </div>
-
-        <div class="input-group" id="billno" style="">
-                  
-                 Bill No. <input id="billNo" type="billNo" class="form-control" name="billNo" placeholder="Bill No." ><span class="formerror"></span>
-        </div>
-
-        <div class="input-group">
-        <select id="slct1" name="slct1"  onchange="populate(this.id,'slct2')">
-        <option value=" ">Brand</option>
-            <option value="samsung">samsung</option>
-            <option value="oppo">oppo</option>
-            <option value="realmi">realmi</option>
-            <option value="lava">lava</option>
-            </select>
-            
-            <select id="slct2"></select><br>
-        </div>
-        
-            <div class="input-group" id="textarea" style="">
-            
-                   Description:<input id="textarea" type="textarea" class="form-control" name="textarea" placeholder=" text area" ><span class="formerror"></span>
-           </div>
-          
-
-           <div class="input-group" id="address" style="">
-                 
-                 Address <input id="address" type="address" class="form-control" name="address" placeholder="Address" ><span class="formerror"></span>
-        </div>
-
-
-        <div class="input-group" id="submit" style="">
-                  
-                   <input id="submit" type="submit" class="form-control btn btn-primary" name="submit" placeholder=" Submit" ><span class="formerror"></span>
-                   <button class ="btn btn-default" id="clear-btn">clear</button>
-           </div>-->
-           <form action=""  class="form"  method ="post" style="">
+           <form action=""  class="form"  method ="post" >
             <h1> Request form: </h1>
             <div class="form-group">
     <label for="name ">Name:</label>
