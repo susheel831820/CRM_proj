@@ -62,8 +62,8 @@ function populate(s1,s2){
 <div class="container">
  
 
-           <form action="action_request.php"  class="form"  method ="post" >
-            <h1> Request form: </h1>
+           <form action="action_request.php"  class="form" onsubmit="success:alert('compleated data submition')" method ="post" >
+            <h1> New Request form: </h1>
             <div class="form-group">
     <label for="name ">Name:</label>
     <input type="name" class="form-control" name="name" placeholder="Full Name" id="fname">

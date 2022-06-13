@@ -38,9 +38,9 @@ function send_token(id){
                <h2><?php echo strtoupper($name);?></h2>
                </div>
                
-                <ul>
+                <ul style="height: 734px;">
                     <!-- <span  id="nameShown"style="color:white; margin-right:20px; font-size:25px;"><h2><?php echo strtoupper($name);?></h2></span> -->
-                    <li class="active"><a href="#">Admin</a></li>
+                    <li class="active"><a href="Dashboard_admin.php">Admin</a></li>
                     <li><a href="#">History</a></li>
                     <li><a href="#">Setting</a></li>
                     <li><a href="logout.php">Logout</a></li>
@@ -130,7 +130,7 @@ $token = $_POST['id'];
 
 
 
- echo $token;
+
 
 
         

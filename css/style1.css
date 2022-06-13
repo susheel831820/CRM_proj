@@ -14,7 +14,7 @@ h4{
   font-size: 22px;
 }
 footer{
-  position: relative;
+  position: bottom;
   /* background-color: rgb(5, 95, 179); */
   background-color: #262f73;
   width:100%;
