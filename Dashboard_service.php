@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User</title>
+    <title>Service Man</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -78,7 +78,7 @@ function populate(s1,s2){
 
 <div class="card" style="display: flex; width: 870px; margin-top: 96px; margin-left: 120px;    height: 126px; padding: 20px;     border: 1px solid black;">
           <div class="card-header"  style="width: 321px;"   >
-            <form action="view_query.php" method="post">
+            <form action="service_view.php" method="get">
              <h2 name="token_no">Request <?php  echo $row['token_no'];?></h2>
           </div>
           <div class="card-body"  style="    display: flex;    flex-direction: row; margin-left: 67px;">
@@ -86,6 +86,9 @@ function populate(s1,s2){
             <p><?php echo "Problem :".$row1['Description']; ?></p>
             
             <button  type="submit" class="btn btn-primary" name ="id" value="<?php echo $row1['token_no']?>"  style="right: 0px; margin-top: 24px;  height: 36px; margin-left: 94px;margin-right: 69px;    width: 89px;">View</button>
+           
+           
+
           </div>
           </form>   
  </div>
