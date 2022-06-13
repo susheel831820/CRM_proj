@@ -14,7 +14,7 @@ h4{
   font-size: 22px;
 }
 footer{
-  position:fixed;
+  position: relative;
   /* background-color: rgb(5, 95, 179); */
   background-color: #262f73;
   width:100%;
@@ -214,7 +214,7 @@ nav ul{
   margin-bottom: 101px;
   max-width: 636px;
   min-width: 499px;
-  min-height: 536px;
+  min-height: 700px;
 
   margin-bottom: 30px;
   width:100vh;

@@ -50,6 +50,12 @@ function send_token(id){
 </div>
 <div class="container" style="height:552px;">
 <?php
+  // if($_SERVER["REQUEST_METHOD"] == "POST") {
+  //   $serviceman_id = $_POST['service_man'];
+  //   $token = $_POST['token_no'];
+  //   echo $serviceman_id;
+  //   echo $token;
+  // }
 $token = $_POST['id'];
  $query= "SELECT * FROM `Request_table` WHERE `token_no`= $token;";
  $query2 = "SELECT * FROM `login` WHERE `Ac_type`='service';";
@@ -78,10 +84,16 @@ $token = $_POST['id'];
         </div>
         <div class="card-footer" style="position: relative;  margin-top: -480px;margin-left: 756px;    width: 200px;">
         <div class="email"><h3><b> Status :</b> <?php echo $row['Status'];?></h3></div>
-        <div> <form action="allocate.php" method="post"> 
+        <?Php
+        if( $row['Status'] == "pending"){
+
+        
+        ?>
+        <div> <form action="allocate.php" method="post">
         <select name="service_man" class="form-control" id="service_man">
         <option value="serviceman_list">Select Service Man</option>
         <?php
+      
         if($resultcheck1>0){
             while($row= mysqli_fetch_array($result1)){
 
@@ -95,6 +107,9 @@ $token = $_POST['id'];
         </select></div>
         <button class="btn btn-primary" name="token_no" value="<?php echo $token?>"style="margin-top:20px;">Allocate Sevice_man</button>
         </form>
+        <?php
+          }
+          ?>
         </div>
  </div>
 </div>
