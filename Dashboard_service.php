@@ -52,7 +52,7 @@ function populate(s1,s2){
                <h2><?php echo strtoupper($name);?></h2>
                </div>
                 <ul style="height: 971px;">
-                    <li class="active"><a href="#">User</a></li>
+                    <li class="active"><a href="Dashboard_service.php">User</a></li>
                     <li><a href="#">History</a></li>
                     <li><a href="#">Setting</a></li>
                     <li><a href="logout.php">Logout</a></li>
