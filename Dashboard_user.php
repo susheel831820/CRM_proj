@@ -55,9 +55,6 @@ function populate(s1,s2){
                     <li class="active"><a href="dashboard_user.php">User</a></li>
 
                     <li><a href="history_user.php">History</a></li>
-
-                    <li><a href="#">History</a></li>
-
                     <li><a href="#">Setting</a></li>
                     <li><a href="logout.php">Logout</a></li>
 </ul>
