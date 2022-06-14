@@ -42,7 +42,7 @@ function send_token(id){
                 <ul style="height: 734px;">
                     <!-- <span  id="nameShown"style="color:white; margin-right:20px; font-size:25px;"><h2><?php echo strtoupper($name);?></h2></span> -->
                     <li class="active"><a href="Dashboard_service.php">Home</a></li>
-                    <li><a href="#">History</a></li>
+                    <li><a href="history_user.php">History</a></li>
                     <li><a href="#">Setting</a></li>
                     <li><a href="logout.php">Logout</a></li>
 
@@ -90,22 +90,17 @@ $token = $_GET['id'];
 
         
         ?>
-        <div> <form action="update_request.php" method="post">
-        <select name="value" class="form-control" id="value">
-        <option value="serviceman_list">Action</option>
+       
         <?php
       
         
 
         
         ?>
-        <option value="Confirm">Confirm</option>
-        <option value="Picked up">Picked up</option>
-        <option value="returne">returned</option>
-        <option value="closed">closed</option>
+       
        
         </select></div>
-        <button type="submit" class="btn btn-success" name="token_no" value="<?php echo $token?>"style="margin-top:20px;">Update...</button>
+        
         </form>
         <?php
         }  
@@ -113,18 +108,6 @@ $token = $_GET['id'];
         </div>
  </div>
 </div>
-            <footer>
-                     <h4><i>&copy;Copyright Reserved.</i></h4>
-            </footer>
-                   
-</body>
-
-</html>
-
-
-
-
-
 
 <?php
 
@@ -138,3 +121,16 @@ $token = $_GET['id'];
  }
  
 ?>
+            <footer>
+                     <h4><i>&copy;Copyright Reserved.</i></h4>
+            </footer>
+                   
+</body>
+
+</html>
+
+
+
+
+
+

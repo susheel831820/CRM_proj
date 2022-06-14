@@ -52,8 +52,8 @@ function populate(s1,s2){
                <h2><?php echo strtoupper($name);?></h2>
                </div>
                 <ul style="height: 971px;">
-                    <li class="active"><a href="#">User</a></li>
-                    <li><a href="#">History</a></li>
+                    <li class="active"><a href="dashboard_user.php">User</a></li>
+                    <li><a href="history_user.php">History</a></li>
                     <li><a href="#">Setting</a></li>
                     <li><a href="logout.php">Logout</a></li>
 </ul>
@@ -66,16 +66,16 @@ function populate(s1,s2){
             <h1> New Request form: </h1>
             <div class="form-group">
     <label for="name ">Name:</label>
-    <input type="name" class="form-control" name="name" placeholder="Full Name" id="fname">
+    <input type="name" class="form-control" name="name" placeholder="Full Name"   id="fname" required >
   </div>
   <div class="form-group">
     <label for="email">Email address:</label>
-    <input type="email" class="form-control" name="email" placeholder="Enter email" id="email">
+    <input type="email" class="form-control" name="email" placeholder="Enter email" id="email" required>
   </div>
 
   <div class="form-group">
     <label for="phone">Phone:</label>
-    <input type="phone" class="form-control" name="phone"placeholder="Phone" id="phone">
+    <input type="phone" class="form-control" name="phone"placeholder="Phone" id="phone" required>
   </div>
 
   <div class="form-group">
@@ -85,12 +85,12 @@ function populate(s1,s2){
 
   <div class="form-group">
     <label for="billno">Bill Number:</label>
-    <input type="billno" class="form-control"  name="bill_No"placeholder="Bill Number" id="billno">
+    <input type="billno" class="form-control"  name="bill_No"placeholder="Bill Number" id="billno" required>
   </div>
  
     <div class="form-group">
       <label for="brand">Brand Name</label>
-      <select id="slct1" name="slct1" class="form-control"  onchange="populate(this.id,'slct2')">
+      <select id="slct1" name="slct1" class="form-control"  onchange="populate(this.id,'slct2')" required>
         <option value=" " >Brand</option>
             <option value="samsung">samsung</option>
             <option value="oppo">oppo</option>
@@ -102,23 +102,23 @@ function populate(s1,s2){
             </div>
             <div class="form-group">
             <label for="model-name">Model Name</label>
-            <select id="slct2" class="form-control" name="slct2" style="margin-top:0px;">
+            <select id="slct2" class="form-control" name="slct2" style="margin-top:0px;" required>
             <option value=" " >model</option>
           </select><br>
           </div>
          
           <div class="form-outline mb-4"><label>Address</label>
-            <textarea class="form-control"  name="Address" id="form7Example7" rows="4"></textarea>
+            <textarea class="form-control"  name="Address" id="form7Example7" rows="4"></textarea required>
            
           </div>
   <div class="form-outline mb-4">
   <label class="form-label" for="form7Example7">Description</label>
-            <textarea class="form-control" name ="discription" id="form7Example7" rows="4"></textarea>
+            <textarea class="form-control" name ="discription" id="form7Example7" rows="4"></textarea required>
            
           </div>
           
   <button type="submit" class="btn btn-primary submit-btn" >Submit</button>
-  <button type="clear" class="btn btn-default submit-btn">clear</button>
+  <button type="reset" class="btn btn-default submit-btn">clear</button>
 </form>
 </div>
             <footer> 
