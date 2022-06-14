@@ -53,7 +53,11 @@ function populate(s1,s2){
                </div>
                 <ul style="height: 971px;">
                     <li class="active"><a href="dashboard_user.php">User</a></li>
+<<<<<<< HEAD
                     <li><a href="history_user.php">History</a></li>
+=======
+                    <li><a href="#">History</a></li>
+>>>>>>> 30fb3febc89853c0c9a916b2ea64e630911bac38
                     <li><a href="#">Setting</a></li>
                     <li><a href="logout.php">Logout</a></li>
 </ul>
