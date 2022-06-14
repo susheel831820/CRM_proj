@@ -15,8 +15,19 @@
    include('session.php');
 ?>
 <script>
-function send_token(id){
-          //  console.log(no); 
+var status = document.getElementById(name);
+console.log(status)
+$(document).ready(function(){
+
+if (document.getElementById('tex').value != 'closed !')
+{
+    document.getElementById('tex').setAttribute("style", "color:green;");
+}
+else
+{
+    document.getElementById('tex').setAttribute("style", "color:red;");
+}
+});
    
   </script>
 <body>
@@ -64,8 +75,7 @@ function send_token(id){
           </div>
           <div class="card-body"  style="    display: flex;    flex-direction: row; margin-left: 67px;">
             <h3 style="    margin-top: 23px; width: 294px;"><?php echo "Name : ".$row['Name']; ?></h3><br>
-            <h3><?php echo "Problem :".$row['Description']; ?><br><span style="color:green">status:<?php echo $row['Status']?></span></h3>
-            
+            <h3><?php echo "Problem :".$row['Description']; ?><br>status:<span><?php echo $row['Statrus']?></span>
             <button  type="submit" class="btn btn-primary" name ="id" value="<?php echo $row['token_no']?>"  style="right: 0px; margin-top: 24px;  height: 36px; margin-left: 94px;margin-right: 69px;    width: 89px;">View</button>
           </div>
           </form>   
