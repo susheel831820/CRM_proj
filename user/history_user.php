@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="../css/style1.css">
   <!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 <?php
-   include('session.php');
+   include('../session.php');
 ?>
 <script>
 var status = document.getElementById(name);
@@ -54,7 +54,7 @@ else
                     <li class="active"><a href="Dashboard_user.php">User</a></li>
                     <li><a href="history_user.php">History</a></li>
                     <li><a href="#">Setting</a></li>
-                    <li><a href="logout.php">Logout</a></li>
+                    <li><a href="../logout.php">Logout</a></li>
 
 </ul>
 </nav>
@@ -75,7 +75,7 @@ else
           </div>
           <div class="card-body"  style="    display: flex;    flex-direction: row; margin-left: 67px;">
             <h3 style="    margin-top: 23px; width: 294px;"><?php echo "Name : ".$row['Name']; ?></h3><br>
-            <h3><?php echo "Problem :".$row['Description']; ?><br>status:<span><?php echo $row['Statrus']?></span>
+            <h3><?php echo "Problem :".$row['Description']; ?><br>status:<span><?php echo $row['Status']?></span>
             <button  type="submit" class="btn btn-primary" name ="id" value="<?php echo $row['token_no']?>"  style="right: 0px; margin-top: 24px;  height: 36px; margin-left: 94px;margin-right: 69px;    width: 89px;">View</button>
           </div>
           </form>   

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="../css/style1.css">
 </head>
 
 <script>
@@ -33,7 +33,7 @@ function populate(s1,s2){
 }
 </script>
 <?php
-   include('session.php');
+   include('../session.php');
 ?>
 <body>
                  <div class="main-bar">
@@ -55,11 +55,8 @@ function populate(s1,s2){
                     <li class="active"><a href="Dashboard_service.php">User</a></li>
 
                     <li><a href="history_user.php">History</a></li>
-
-                    <li><a href="#">History</a></li>
-
                     <li><a href="#">Setting</a></li>
-                    <li><a href="logout.php">Logout</a></li>
+                    <li><a href="../logout.php">Logout</a></li>
 </ul>
 </nav>
 </div>

@@ -8,7 +8,7 @@ $query = "INSERT INTO `allocation`(`token_no`, `serviceman_id`) VALUES ('$token'
 $result = mysqli_query($db,$query);
 // $resultcheck= mysqli_num_rows($result);
 if ($result>0){
-    echo "successful entered data";
+    // echo "successful entered data";
     header("location:Dashboard_admin.php");
     mysqli_query($db,"UPDATE `request_table` SET `Status` = 'on going' WHERE `request_table`.`token_no` = $token;");
 

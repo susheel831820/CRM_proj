@@ -2,13 +2,13 @@
    include('session.php');
 
       if($actype == "user"){
-        header("location:Dashboard_user.php");
+        header("location:user/Dashboard_user.php");
     }
     elseif($actype =="admin"){
-        header("location:Dashboard_admin.php");
+        header("location:admin/Dashboard_admin.php");
     }
     elseif($actype =="service"){
-        header("location:Dashboard_service.php");
+        header("location:service/Dashboard_service.php");
 
     }
       ?>

@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="../css/style1.css">
   <!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 <?php
-   include('session.php');
+   include('../session.php');
 ?>
 <script>
 function send_token(id){
@@ -44,7 +44,7 @@ function send_token(id){
                     <li class="active"><a href="Dashboard_service.php">Home</a></li>
                     <li><a href="history_user.php">History</a></li>
                     <li><a href="#">Setting</a></li>
-                    <li><a href="logout.php">Logout</a></li>
+                    <li><a href="../logout.php">Logout</a></li>
 
 </ul>
 </nav>
