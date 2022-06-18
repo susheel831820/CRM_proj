@@ -43,7 +43,7 @@ function send_token(id){
                     <li class="active"><a href="Dashboard_admin.php">Admin</a></li>
                     <li><a href="#">History</a></li>
                     <li><a href="#">Setting</a></li>
-                    <li><a href="logout.php">Logout</a></li>
+                    <li><a href="../logout.php">Logout</a></li>
 
 </ul>
 </nav>
