@@ -1,7 +1,7 @@
 <?php
 
 //  include('config.php');
- include('session.php');
+ include('../session.php');
  $full_name= $_POST['name'];
  $email= $_POST['email'];
  $phone= $_POST['phone'];
