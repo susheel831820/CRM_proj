@@ -9,6 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="../css/style1.css">
+  <link rel="stylesheet" href="../css/search_box.css">
   <!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 <?php
@@ -52,27 +53,30 @@ else
                 <ul style="height: 734px;">
                     <!-- <span  id="nameShown"style="color:white; margin-right:20px; font-size:25px;"><h2><?php echo strtoupper($name);?></h2></span> -->
                     <li class="active"><a href="dashboard_user.php">Dhashboard</a></li>
-
                     <li><a href="history_user.php">All Ticket</a></li>
                     <li><a href="request.php"> New Request</a></li>
+                    <li><a href="search_ticket.php"> Search Tickets</a></li>
                     <li><a href="../logout.php">Logout</a></li>
 </ul>
 </nav>
 </div>
 <div class="container">
-  <div class="search-form">
-    <form action="#" class="form">
-      <h4>Search : </h4>
-      <div class="form-group">
-        <input type="text" name ="name" class="form-control">
+  <div class="search-form " id="search_box" style="">
+    <form action="#" class="form" style="    width: 957px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center; margin-top:57px; ">
+      <h4 style="margin-top:4px;">Search : </h4>
+      <div class="form-group" style="margin-left:20px;">
+        <input type="text" name ="name" class="form-control" style="width:100%; ">
         
       </div>
-      <div class="form-group">
-      <input type="number" name="mobile-no" class="form-control">
+      <div class="form-group" style="margin-left:20px;">
+      <input type="number" name="mobile-no" class="form-control"style="width:100%; ">
 
       </div>
-      <div class="form-group">
-      <input type="submit"  class="form-control">
+      <div class="form-group" style="margin-left:20px;">
+      <input type="submit"  class="form-control" style="width:100%; ">
 
       </div>
     </form>

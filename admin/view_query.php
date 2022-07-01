@@ -40,10 +40,12 @@ function send_token(id){
                
                 <ul style="height: 734px;">
                     <!-- <span  id="nameShown"style="color:white; margin-right:20px; font-size:25px;"><h2><?php echo strtoupper($name);?></h2></span> -->
-                    <li class="active"><a href="Dashboard_admin.php">Admin</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Setting</a></li>
-                    <li><a href="../logout.php">Logout</a></li>
+                    <li class="active"><a href="dashboard_admin.php">Dashboard Admin</a></li>
+                    <li><a href="All_history.php">All tickets</a></li>
+                    <li><a href="search_ticket.php">Search tickets</a></li>
+                    <li><a href="pending.php">Pending tickets</a></li>
+                    <li><a href="closed.php">Closed tickets</a></li>
+                    <li><a href="../logout.php">Logout</a></li>>
 
 </ul>
 </nav>

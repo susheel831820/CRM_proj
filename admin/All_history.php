@@ -44,37 +44,53 @@ function send_token(id){
                     <li><a href="All_history.php">All tickets</a></li>
                     <li><a href="search_ticket.php">Search tickets</a></li>
                     <li><a href="pending.php">Pending tickets</a></li>
-                    <li><a href="closed.php">closed tickets</a></li>
+                    <li><a href="closed.php">Closed tickets</a></li>
                     <li><a href="../logout.php">Logout</a></li>
 
 </ul>
 </nav>
 </div>
-<div class="container">
-<div class="welcome-box">
-        <h1 style=""> Welcome <?php echo strtoupper($name)?></h1>
+<div class="container" style="display:flex;  margin-left:400px;" >
 
-    </div>
-    <?php
-    $sql = "SELECT * FROM `request_table` WHERE 1";
-    $result = mysqli_query($db,$sql);
-    $no_of_request =  mysqli_num_rows($result);
-    $sql2 = "SELECT * FROM `request_table` WHERE `status`='pending'";
-    $result2 = mysqli_query($db,$sql2);
-    $no_new_request =  mysqli_num_rows($result2);
-    
+  <?php
+    $query = "SELECT * FROM `Request_table`;";
+    $result = mysqli_query($db,$query);
+    $resultcheck = mysqli_num_rows($result);
     ?>
-    <div style="display:flex ;width:655px;">
-    <div class="dash-card">
-      <h3 style="margin-left:20px;">Total Request : <?php echo $no_of_request;?></h3>
-      <button class="btn btn-default" style="margin-left:210px; margin-top:10px;"><a href="All_history.php">View</a></button>
-    </div>
-    <div class="dash-card" style="margin-left:40px;">
-     <h3 style="margin-left:20px;">New Request : <?php echo $no_new_request;?></h3>
-      <button class="btn btn-default" style="margin-left:210px; margin-top:10px;"><a href="pending.php">View</a></button>
-    </div>
+       <div class="row" style="width:1099px; margin-top:50px;">
+        <?php
+     if ($resultcheck > 0){
+        while($row = mysqli_fetch_assoc($result)){
+             
+        
+           
+    
+        ?>
+       
+        <div class="col-sm-3" style="width:300px;  ">
+        <form action="view_query.php" method="post">
+            <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h1>Token No :<?php echo $row['token_no']?></h1>
+                        <h5><b>Name :</b><?php echo $row['Name']?></h5>
+                        <h5><b>Mobile No :</b><?php echo $row['Phone']?></h5>
+                        <h5><b>Status :</b><?php echo $row['Status']?></h5>
+                    </div>          
+                    <div class="panel-footer" style="margin-bottom:10px; background-color: #fff;" >
+                    <button  type="submit" class="btn btn-primary" name ="id" value="<?php echo $row['token_no']?>"  style="right: 0px; margin-top: 24px;  height: 36px; margin-left: 94px;margin-right: 69px;    width: 89px;">View</button>
+                    </div>
+                </form>
+                    
+            </div>
 
+        </div>
+        <?php
+     }}
+     ?>
     </div>
+     
+     
+</div>
 </div>
             <footer>
                      <h4><i>&copy;Copyright Reserved.</i></h4>
