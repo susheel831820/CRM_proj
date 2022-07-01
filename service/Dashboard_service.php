@@ -45,12 +45,14 @@
     $query = "SELECT * FROM `allocation` WHERE `serviceman_id`= $sno;";
     $result = mysqli_query($db,$query);
     $Total_allocate = mysqli_num_rows($result);
+    $new_allocation='0';
     // echo "totoal allocate:".$Total_allocate;?>
     <div style="display:flex ;width:655px;">
       <div class="dash-card">
       <h3 style="margin-left:20px;">Total Request : <?php echo $Total_allocate;?></h3>
       <button class="btn btn-default" style="margin-left:210px; margin-top:10px;"><a href="history.php">View</a></button>
       </div>
+     
      
        <?php
     if ($Total_allocate > 0){
@@ -61,19 +63,25 @@
         $result1 = mysqli_query($db,$query1);
         $new_allocate =mysqli_num_rows($result1);
          if($new_allocate>0){
-        ?>
-        <div class="dash-card" style="margin-left:40px;">
-          <h3 style="margin-left:20px;">New Request : <?php echo $new_allocate;?></h3>
-            <button class="btn btn-default" style="margin-left:210px; margin-top:10px;"><a href="pending.php">View</a></button>
-        </div>
+        
+        $new_allocation += 1;
 
-    </div>
-        <?php
+        
 
          }
          
     }
+    
 }
+?>
+ <div class="dash-card" style="margin-left:40px;">
+          <h3 style="margin-left:20px;">New Request :<?php echo $new_allocation?>
+         </h3>
+            <button class="btn btn-default" style="margin-left:210px; margin-top:10px;"><a href="pending.php">View</a></button>
+        </div>
+
+    </div><?php
+
   ?>
 </div>
             <footer> 
