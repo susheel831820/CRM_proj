@@ -32,7 +32,7 @@
                <h2><?php echo strtoupper($name);?></h2>
                </div>
                 <ul style="height: 971px;">
-                    <li class="active"><a href="Dashboard_service.php">Dhashboard</a></li>
+                <li class="active"><a href="Dashboard_service.php">Dhashboard</a></li>
                     <li><a href="history.php">All ticket</a></li>
                     <li><a href="closed.php">Closed ticket</a></li>
                     <li><a href="#">Setting</a></li>
@@ -44,34 +44,44 @@
 <?php
     $query = "SELECT * FROM `allocation` WHERE `serviceman_id`= $sno;";
     $result = mysqli_query($db,$query);
-    $Total_allocate = mysqli_num_rows($result);
-    // echo "totoal allocate:".$Total_allocate;?>
-    <div style="display:flex ;width:655px;">
-      <div class="dash-card">
-      <h3 style="margin-left:20px;">Total Request : <?php echo $Total_allocate;?></h3>
-      <button class="btn btn-default" style="margin-left:210px; margin-top:10px;"><a href="history.php">View</a></button>
-      </div>
-     
-       <?php
-    if ($Total_allocate > 0){
+    $resultcheck = mysqli_num_rows($result);
+   
+       
+    if ($resultcheck > 0){
 
     while($row = mysqli_fetch_assoc($result)){
         $token_no =  $row['token_no'];
-        $query1 = "SELECT * FROM `Request_table` WHERE `token_no` = $token_no and `Status` != 'closed';";
+        $query1 = "SELECT * FROM `Request_table` WHERE `token_no` = $token_no and `Status`!='closed';";
         $result1 = mysqli_query($db,$query1);
-        $new_allocate =mysqli_num_rows($result1);
-         if($new_allocate>0){
-        ?>
-        <div class="dash-card" style="margin-left:40px;">
-          <h3 style="margin-left:20px;">New Request : <?php echo $new_allocate;?></h3>
-            <button class="btn btn-default" style="margin-left:210px; margin-top:10px;"><a href="pending.php">View</a></button>
-        </div>
+         if(mysqli_num_rows($result1)>0){
+         while($row1 =  mysqli_fetch_assoc($result1)){
+                    ?>
 
-    </div>
-        <?php
+<div class="card" style="display: flex; width: 870px; margin-top: 96px; margin-left: 120px;    height: 126px; padding: 20px;     border: 1px solid black;">
+          <div class="card-header"  style="width: 321px;"   >
+            <form action="service_view.php" method="get">
+             <h2 name="token_no">Request <?php  echo $row['token_no'];?></h2>
+          </div>
+          <div class="card-body"  style="    display: flex;    flex-direction: row; margin-left: 67px;">
+            <p style="    margin-top: 23px; width: 294px;"><?php echo "Name : ".$row1['Name']; ?></p><br>
+            <p><?php echo "Problem :".$row1['Description']; ?></p>
+            
+            <button  type="submit" class="btn btn-primary" name ="id" value="<?php echo $row1['token_no']?>"  style="right: 0px; margin-top: 24px;  height: 36px; margin-left: 94px;margin-right: 69px;    width: 89px;">View</button>
+           
+           
+
+          </div>
+          </form>   
+ </div>
+
+
+
+
+                    <?php
+        
+            }
 
          }
-         
     }
 }
   ?>
