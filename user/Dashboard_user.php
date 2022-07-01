@@ -81,7 +81,7 @@ function populate(s1,s2){
     </div>
      <div class="dash-card" style="margin-left:40px;">
      <h3 style="margin-left:20px;">New Request : <?php echo $no_new_request;?></h3>
-      <button class="btn btn-default" style="margin-left:210px; margin-top:10px;"><a href="history_user.php">View</a></button>
+      <button class="btn btn-default" style="margin-left:210px; margin-top:10px;"><a href="pending.php">View</a></button>
       </div>
 
     </div>

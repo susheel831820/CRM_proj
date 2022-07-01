@@ -62,7 +62,7 @@ else
 </div>
 <div class="container">
   <div class="search-form " id="search_box" style="">
-    <form action="#" class="form" style="    width: 957px;
+    <form action="search_ticket.php"  method="post"class="form" style="    width: 957px;
     margin-left: 30px;
     display: flex;
     justify-content: center; margin-top:57px; ">
@@ -72,7 +72,7 @@ else
         
       </div>
       <div class="form-group" style="margin-left:20px;">
-      <input type="number" name="mobile-no" class="form-control"style="width:100%; ">
+      <input type="number" name="mobile_no" class="form-control"style="width:100%; ">
 
       </div>
       <div class="form-group" style="margin-left:20px;">
@@ -92,12 +92,12 @@ else
  <div class="card" style="display: flex; width: 870px; margin-top: 96px; margin-left: 120px;    height: 126px; padding: 20px;     border: 1px solid black;">
           <div class="card-header"  style="width: 321px;"   >
             <form action="user_view_query.php" method="get">
-             <h2 name="token_no">Ticket No: <?php  echo $row['token_no'];?></h2>
+             <h2 name="token_no" style="    width: 177px;">Ticket No: <?php  echo $row['token_no'];?></h2>
           </div>
           <div class="card-body"  style="    display: flex;    flex-direction: row; margin-left: 67px;">
-            <h3 style="    margin-top: 23px; width: 294px;"><?php echo "Name : ".$row['Name']; ?></h3><br>
-            <h3><?php echo "Problem :".$row['Description']; ?><br>status:<span><?php echo $row['Status']?></span>
-            <button  type="submit" class="btn btn-primary" name ="id" value="<?php echo $row['token_no']?>"  style="right: 0px; margin-top: 24px;  height: 36px; margin-left: 94px;margin-right: 69px;    width: 89px;">View</button>
+            <h3 style="    margin-top: 23px; width: 294px;"><?php echo "<b> Name: </b>".$row['Name']; ?></h3><br>
+            <h3><b>mobile No:</b> <?php echo $row['Phone']?></h3>
+            <button  type="submit" class="btn btn-primary" name ="id" value="<?php echo $row['token_no']?>"  style="right: 0px; margin-top: 24px;  height: 36px; margin-left: 10px;margin-right: 69px;    width: 89px;">View</button>
           </div>
           </form>   
  </div>
