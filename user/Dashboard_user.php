@@ -51,76 +51,43 @@ function populate(s1,s2){
                <div id="namebar">
                <h2><?php echo strtoupper($name);?></h2>
                </div>
-                <ul style="height: 971px;">
-                    <li class="active"><a href="dashboard_user.php">User</a></li>
+                <ul style="height: 100vh;">
+                    <li class="active"><a href="dashboard_user.php">Dhashboard</a></li>
 
-                    <li><a href="history_user.php">History</a></li>
-                    <li><a href="#">Setting</a></li>
+                    <li><a href="history_user.php">All Ticket</a></li>
+                    <li><a href="request.php"> New Request</a></li>
                     <li><a href="../logout.php">Logout</a></li>
 </ul>
 </nav>
 </div>
 <div class="container">
- 
+    <div class="welcome-box">
+        <h1 style=""> Welcome <?php echo strtoupper($name)?></h1>
 
-           <form action="action_request.php"  class="form" onsubmit="success:alert('compleated data submition')" method ="post" >
-            <h1> New Request form: </h1>
-            <div class="form-group">
-    <label for="name ">Name:</label>
-    <input type="name" class="form-control" name="name" placeholder="Full Name"   id="fname" required >
-  </div>
-  <div class="form-group">
-    <label for="email">Email address:</label>
-    <input type="email" class="form-control" name="email" placeholder="Enter email" id="email" required>
-  </div>
+    </div>
+    <?php
+    $sql = "SELECT * FROM `request_table` WHERE 1";
+    $result = mysqli_query($db,$sql);
+    $no_of_request =  mysqli_num_rows($result);
+    $sql2 = "SELECT * FROM `request_table` WHERE `status`='pending'";
+    $result2 = mysqli_query($db,$sql2);
+    $no_new_request =  mysqli_num_rows($result2);
+    
+    ?>
+    <div style="display:flex ;width:655px;">
+    <div class="dash-card">
+      <h3 style="margin-left:20px;">Total Request : <?php echo $no_of_request;?></h3>
+      <button class="btn btn-default" style="margin-left:210px; margin-top:10px;"><a href="history_user.php">View</a></button>
+    </div>
+     <div class="dash-card" style="margin-left:40px;">
+     <h3 style="margin-left:20px;">New Request : <?php echo $no_new_request;?></h3>
+      <button class="btn btn-default" style="margin-left:210px; margin-top:10px;"><a href="history_user.php">View</a></button>
+      </div>
 
-  <div class="form-group">
-    <label for="phone">Phone:</label>
-    <input type="phone" class="form-control" name="phone"placeholder="Phone" id="phone" required>
-  </div>
+    </div>
+    
 
-  <div class="form-group">
-    <label for="altphone">Alternative Phone:</label>
-    <input type="altphone" class="form-control" name="alt-phone" placeholder="Alternative Phone" id="altphone">
-  </div>
-
-  <div class="form-group">
-    <label for="billno">Bill Number:</label>
-    <input type="billno" class="form-control"  name="bill_No"placeholder="Bill Number" id="billno" required>
-  </div>
- 
-    <div class="form-group">
-      <label for="brand">Brand Name</label>
-      <select id="slct1" name="slct1" class="form-control"  onchange="populate(this.id,'slct2')" required>
-        <option value=" " >Brand</option>
-            <option value="samsung">samsung</option>
-            <option value="oppo">oppo</option>
-            <option value="realmi">realmi</option>
-            <option value="lava">lava</option>
-            </select>
-      
-
-            </div>
-            <div class="form-group">
-            <label for="model-name">Model Name</label>
-            <select id="slct2" class="form-control" name="slct2" style="margin-top:0px;" required>
-            <option value=" " >model</option>
-          </select><br>
-          </div>
-         
-          <div class="form-outline mb-4"><label>Address</label>
-            <textarea class="form-control"  name="Address" id="form7Example7" rows="4"></textarea required>
-           
-          </div>
-  <div class="form-outline mb-4">
-  <label class="form-label" for="form7Example7">Description</label>
-            <textarea class="form-control" name ="discription" id="form7Example7" rows="4"></textarea required>
-           
-          </div>
-          
-  <button type="submit" class="btn btn-primary submit-btn" >Submit</button>
-  <button type="reset" class="btn btn-default submit-btn">clear</button>
-</form>
+     
 </div>
             <footer> 
                      <h4><i>&copy;Copyright Reserved.</i></h4>

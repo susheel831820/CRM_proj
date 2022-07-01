@@ -51,17 +51,34 @@ else
                
                 <ul style="height: 734px;">
                     <!-- <span  id="nameShown"style="color:white; margin-right:20px; font-size:25px;"><h2><?php echo strtoupper($name);?></h2></span> -->
-                    <li class="active"><a href="Dashboard_user.php">User</a></li>
-                    <li><a href="history_user.php">History</a></li>
-                    <li><a href="#">Setting</a></li>
-                    <li><a href="../logout.php">Logout</a></li>
+                    <li class="active"><a href="dashboard_user.php">Dhashboard</a></li>
 
+                    <li><a href="history_user.php">All Ticket</a></li>
+                    <li><a href="request.php"> New Request</a></li>
+                    <li><a href="../logout.php">Logout</a></li>
 </ul>
 </nav>
 </div>
 <div class="container">
+  <div class="search-form">
+    <form action="#" class="form">
+      <h4>Search : </h4>
+      <div class="form-group">
+        <input type="text" name ="name" class="form-control">
+        
+      </div>
+      <div class="form-group">
+      <input type="number" name="mobile-no" class="form-control">
+
+      </div>
+      <div class="form-group">
+      <input type="submit"  class="form-control">
+
+      </div>
+    </form>
+  </div>
   <?php
-    $query = "SELECT * FROM `Request_table` WHERE `Sno`=$sno;";
+    $query = "SELECT * FROM `Request_table` WHERE 1";
     $result = mysqli_query($db,$query);
     $resultcheck = mysqli_num_rows($result);
     if ($resultcheck > 0){
@@ -71,7 +88,7 @@ else
  <div class="card" style="display: flex; width: 870px; margin-top: 96px; margin-left: 120px;    height: 126px; padding: 20px;     border: 1px solid black;">
           <div class="card-header"  style="width: 321px;"   >
             <form action="user_view_query.php" method="get">
-             <h2 name="token_no">Request <?php  echo $row['token_no'];?></h2>
+             <h2 name="token_no">Ticket No: <?php  echo $row['token_no'];?></h2>
           </div>
           <div class="card-body"  style="    display: flex;    flex-direction: row; margin-left: 67px;">
             <h3 style="    margin-top: 23px; width: 294px;"><?php echo "Name : ".$row['Name']; ?></h3><br>

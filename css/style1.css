@@ -214,15 +214,15 @@ nav ul{
   margin-bottom: 101px;
   max-width: 636px;
   min-width: 499px;
-  min-height: 700px;
+  min-height: 100vh;
 
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   width:100vh;
   
 
 }
 .form{
-  width: 612px;
+  width: 886px;
   margin-left: 30px
 }
 .submit-btn{
@@ -235,4 +235,14 @@ nav ul{
     width: 708px;
     margin-top: 96px;
     margin-left: 120px;
+}
+.dash-card{
+  background: #262f73;
+  width: 364px;
+  height: 121px;
+  margin-left:10px;
+  margin-top: 15px;
+  color:white;
+  
+  /* border:2px solid black; */
 }

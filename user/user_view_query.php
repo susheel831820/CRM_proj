@@ -41,9 +41,10 @@ function send_token(id){
                
                 <ul style="height: 734px;">
                     <!-- <span  id="nameShown"style="color:white; margin-right:20px; font-size:25px;"><h2><?php echo strtoupper($name);?></h2></span> -->
-                    <li class="active"><a href="Dashboard_service.php">Home</a></li>
-                    <li><a href="history_user.php">History</a></li>
-                    <li><a href="#">Setting</a></li>
+                    <li class="active"><a href="dashboard_user.php">Dhashboard</a></li>
+
+                    <li><a href="history_user.php">All Ticket</a></li>
+                    <li><a href="request.php"> New Request</a></li>
                     <li><a href="../logout.php">Logout</a></li>
 
 </ul>
