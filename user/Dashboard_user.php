@@ -53,9 +53,9 @@ function populate(s1,s2){
                </div>
                 <ul style="height: 100vh;">
                     <li class="active"><a href="dashboard_user.php">Dhashboard</a></li>
-
                     <li><a href="history_user.php">All Ticket</a></li>
                     <li><a href="request.php"> New Request</a></li>
+                    <li><a href="search_ticket.php"> Search Tickets</a></li>
                     <li><a href="../logout.php">Logout</a></li>
 </ul>
 </nav>
