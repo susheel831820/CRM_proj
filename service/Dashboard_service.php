@@ -32,11 +32,11 @@
                <h2><?php echo strtoupper($name);?></h2>
                </div>
                 <ul style="height: 971px;">
-                    <li class="active"><a href="Dashboard_service.php">Dhashboard</a></li>
-                    <li><a href="history.php">All ticket</a></li>
-                    <li><a href="closed.php">Closed ticket</a></li>
-                    <li><a href="#">Setting</a></li>
-                    <li><a href="../logout.php">Logout</a></li>
+                  <li class="active"><a href="Dashboard_service.php">Dhashboard</a></li>
+                  <li><a href="closed.php">Closed ticket</a></li>
+                  <li><a href="#">Setting</a></li>
+                  <li><a href="../logout.php">Logout</a></li>
+                  <li><a href="history.php">All ticket</a></li>
 </ul>
 </nav>
 </div>
