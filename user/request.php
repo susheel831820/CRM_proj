@@ -68,7 +68,7 @@ function populate(s1,s2){
 <div class="container">
  
 
-           <form action="action_request.php"  class="form" onsubmit="success:alert('compleated data submition')" method ="post" >
+           <form action="action_request.php"  class="form" onsubmit="promt('do you reaaly want to requet service ')" method ="post" >
             <h1> New Request form: </h1>
 
             <div class="form-group">
